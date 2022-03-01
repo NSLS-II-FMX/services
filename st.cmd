@@ -4,10 +4,11 @@ export USER=notebook
 export HOME=/epics/iocs/notebook
 export SHELL=bash
 
+. /etc/profile.d/epics.sh
+. /opt/conda/etc/profile.d/conda.sh
+
 log_dir="/var/log/jupyter"
 jupyter_log="$log_dir/jupyter-fmx_$(date "+%F_%H-%M-%S").log"
-
-. /opt/conda/etc/profile.d/conda.sh
 
 # source activate /opt/conda_envs/collection-17Q3.0
 # conda activate /opt/conda_envs/collection-2019-2.0-fmx
