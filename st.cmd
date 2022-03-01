@@ -15,8 +15,8 @@ jupyter_log="$log_dir/jupyter-fmx_$(date "+%F_%H-%M-%S").log"
 # conda activate /opt/conda_envs/collection-2019-3.0-fmx
 # conda activate /opt/conda_envs/collection-2020-2.0rc8
 # conda activate /opt/conda_envs/collection-2021-1.0
-conda activate /opt/conda_envs/nsls2-collection-2021-2.2
-# conda activate /opt/conda_envs/2022-1.0-py39
+# conda activate /opt/conda_envs/nsls2-collection-2021-2.2
+conda activate /opt/conda_envs/2022-1.0-py39
 
 ###############################################################################
 # DAMA note (July 10, 2019): the corresponding kernel file is defined in      #
