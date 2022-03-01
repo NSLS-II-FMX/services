@@ -1,0 +1,14 @@
+[Unit]
+Description=FMX Jupyter service
+
+[Service]
+User=softioc
+Group=softioc
+SyslogIdentifier=jupyter-fmx
+TimeoutStartSec=0
+# Restart=always
+WorkingDirectory=/epics/iocs/notebook
+ExecStart=/epics/iocs/notebook/st.cmd
+
+[Install]
+WantedBy=multi-user.target
