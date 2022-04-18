@@ -2,8 +2,8 @@
 Description=FMX Jupyter service
 
 [Service]
-User=softioc
-Group=softioc
+User=softioc-fmx
+Group=n2sn-instadmin
 SyslogIdentifier=jupyter-fmx
 TimeoutStartSec=0
 # Restart=always
