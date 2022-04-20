@@ -2,7 +2,7 @@
 Description=FMX Jupyter service
 
 [Service]
-User=softioc-fmx
+User=xf17id2
 Group=n2sn-instadmin
 SyslogIdentifier=jupyter-fmx
 TimeoutStartSec=0
