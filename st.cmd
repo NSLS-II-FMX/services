@@ -4,7 +4,6 @@ export USER=xf17id2
 export HOME=/epics/iocs/notebook
 export SHELL=bash
 
-. /etc/profile.d/epics.sh
 . /opt/conda/etc/profile.d/conda.sh
 
 log_dir="/var/log/jupyter"
@@ -25,4 +24,4 @@ conda activate /nsls2/conda/envs/2022-2.0-py39
 # symlinked to /usr/share/jupyter/kernels/collection-*/kernel.json            #
 ###############################################################################
 
-jupyter lab --no-browser --notebook-dir=/epics/iocs/notebook/notebooks/ --ip=0.0.0.0 --port=17000 --debug > $jupyter_log 2>&1
+jupyter lab --no-browser --config=/epics/iocs/notebook/configs/jupyter_notebook_config.py --notebook-dir=/epics/iocs/notebook/notebooks/ --ip=0.0.0.0 --port=17000 --debug > $jupyter_log 2>&1
